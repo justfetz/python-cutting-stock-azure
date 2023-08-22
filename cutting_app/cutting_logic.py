@@ -77,9 +77,3 @@ def cutting_stock(orders, stock_width):
     for pattern in formatted_patterns_with_waste:
         print(pattern)
     return formatted_patterns_with_waste
-
-
-
-
-# We'll just return the modified functions without executing them, so you can integrate them into your Django project.
-# cutting_stock, cutting_view
