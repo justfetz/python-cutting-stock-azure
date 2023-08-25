@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-39!@vbzm)09&dx!bl!y0qv8_mz)3^=mm9_dlf@@s$k-xex7i9&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cutting-app.azurewebsites.net']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
