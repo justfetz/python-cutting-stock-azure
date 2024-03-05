@@ -1,22 +1,38 @@
 import itertools
 from itertools import combinations_with_replacement
 
+
+#def generate_patterns(orders, stock_width):
+#    widths = [order[0] for order in orders]
+#    patterns = []
+
+    # Generate all combinations of widths
+#    for r in range(1, len(widths) + 1):
+#        for combination in combinations_with_replacement(widths, r):
+#            if sum(combination) <= stock_width:
+#                patterns.append(combination)
+#    for pattern in patterns:
+#        print(pattern)
+#    return patterns
+
 def generate_patterns(orders, stock_width):
     widths = [order[0] for order in orders]
     patterns = []
 
-    # Generate all combinations of widths
-    for r in range(1, len(widths) + 1):
-        for combination in combinations_with_replacement(widths, r):
-            if sum(combination) <= stock_width:
-                patterns.append(combination)
-    for pattern in patterns:
-        print(pattern)
+    # Check for identical widths case
+    if len(set(widths)) == 1:  # All widths are identical
+        max_pieces = stock_width // widths[0]  # Maximum number of pieces that can fit into the stock width
+        for i in range(1, max_pieces + 1):
+            if i * widths[0] <= stock_width:
+                patterns.append((widths[0],) * i)
+    else:
+        # Generate all combinations of widths for varied widths
+        for r in range(1, len(widths) + 1):
+            for combination in itertools.combinations_with_replacement(widths, r):
+                if sum(combination) <= stock_width:
+                    patterns.append(combination)
+
     return patterns
-
-
-
-
 
 def cutting_stock(orders, stock_width):
     n = len(orders)
