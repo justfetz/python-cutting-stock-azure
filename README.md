@@ -1,4 +1,6 @@
-##Talk to My Machine
+## Talk to My Machine
 
-###Documentation
+### Documentation
+
+### 1. Intro
 
