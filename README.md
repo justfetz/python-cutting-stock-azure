@@ -21,8 +21,8 @@ The approach used to solve the Cutting Stock Problem in this project is dynamic 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/python-cutting-stock-azure.git
-    cd python-cutting-stock-azure
+    git clone https://github.com/yourusername/python-cutting-stock-operations-research.git
+    cd python-cutting-stock-operations-research
     ```
 
 2. **Create and activate a virtual environment:**
