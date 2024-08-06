@@ -21,8 +21,8 @@ The approach used to solve the Cutting Stock Problem in this project is dynamic 
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/cutting-stock-problem.git
-    cd cutting-stock-problem
+    git clone https://github.com/yourusername/python-cutting-stock-azure.git
+    cd python-cutting-stock-azure
     ```
 
 2. **Create and activate a virtual environment:**
@@ -59,13 +59,18 @@ The approach used to solve the Cutting Stock Problem in this project is dynamic 
     - View the optimal cutting pattern and the amount of waste produced.
 
 ## Project Structure
-- `cutting_stock/`: Django project directory.
-- `cutting_stock_app/`: Django application directory containing the main logic.
+- `.github/workflows/`: GitHub Actions workflows.
+- `cutting_app/`: Django application directory containing the main logic.
   - `migrations/`: Database migration files.
   - `templates/`: HTML templates for the web interface.
   - `views.py`: Contains the view functions for handling requests and rendering templates.
   - `models.py`: Defines the database models.
   - `dynamic_programming.py`: Implementation of the dynamic programming algorithm for the Cutting Stock Problem.
+  - `generate_patterns.py`: Functions to generate cutting patterns.
+- `cutting_project/`: Django project directory.
+- `.gitignore`: Git ignore file.
+- `README.md`: This README file.
+- `db.sqlite3`: SQLite database file.
 - `manage.py`: Django's command-line utility for administrative tasks.
 - `requirements.txt`: List of Python dependencies.
 
@@ -88,4 +93,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 For questions or comments, please contact [yourname@domain.com](mailto:jasonfetzer@protonmail.com).
-
