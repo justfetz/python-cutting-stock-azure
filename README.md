@@ -1,5 +1,7 @@
 # Cutting Stock Operations Research
 
+![CI](https://github.com/justfetz/python-cutting-stock-operations-research/actions/workflows/ci.yml/badge.svg)
+
 Runnable Java, Python, and OR-Tools implementations of a simple 1D cutting stock problem.
 
 This repo is meant to present the same manufacturing-flavored optimization problem through:
